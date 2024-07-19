@@ -1,8 +1,10 @@
 # ManagingPI
-Overview
-This project is a Personal Information Manager that allows you to add and retrieve personal information such as names and dates of birth (DOB). The data is persisted using Python's pickle module, ensuring that the information is saved between sessions.
+Overview:
 
-Features
+This project is a Personal Information Manager that allows you to add and retrieve personal information such as names and dates of birth (DOB). The data is persisted using Python's pickle module, ensuring the information is saved between sessions.
+
+Features:
+
 Add Personal Information: Add names and dates of birth, with the option to mark some DOBs as secret.
 Retrieve Personal Information: Retrieve the DOB of a person, with the option to hide secret DOBs.
 Data Persistence: Information is saved to a file (problem1_data_file.pickle) and loaded on startup.
@@ -10,12 +12,21 @@ Input Validation: Proper validation and error handling for user inputs, with ret
 Logging: Logs actions and errors for debugging and tracking purposes.
 Prerequisites
 Python 3.x
-Data Structure
-Here the data is stored in a dictionary format, where each key is a person's name, and the value is another dictionary containing their DOB and a flag indicating if the DOB is secret. Here is an example: {
+
+
+Data Structure:
+
+The data is stored in a dictionary format, where each key is a person's name, and the value is another dictionary containing their DOB and a flag indicating if the DOB is secret. Here is an example: {
     "John Doe": {"dob": "1990-01-01", "secret": False},
     "Jane Doe": {"dob": "1992-02-02", "secret": True}
 }
-Code Explanation
+
+
+
+
+Code Explanation:
+
+
 PersonalInfoManager Class
 __init__(self, data_file='problem1_data_file.pickle'):
 Initializes the manager with a data file and loads existing data.
